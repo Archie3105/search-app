@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: lightcoral;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  padding: 5px 0px;
+  padding: 5px 0px;
+  margin: 4px;
+}
+
+.search input {
+  font-size: 2em;
+  padding: 2px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  border: #991010 solid;
+}
+
+.search button {
+  font-size: 2em;
+  padding: 2px 20px;
+  border-radius: 8px;
+  border: #991010 solid;
+  transition: all ease 0.3s;
+  /* text-align: auto; */
+}
+
+.search button:hover {
+  background: #e63535;
+  color: #fff;
+  border: #fff solid;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  /* color: rgb(162, 241, 241); */
+  color: #991010;
+  font-size: 3em;
+}
+
+.search-results {
+  display: flex;
+  padding: 10px;
+  margin: 50px 0px 25px;
+}
+
+.output {
+  width: 100%;
+  display: inline-block;
+  margin: 25px;
+}
+
+.output img {
+  width: 100%;
+  /* max-width: 600px; */
+  height: 250px;
+  padding: 0%;
+}
+
+.output a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px;
+  text-transform: capitalize;
+}
+
+#show-more-item {
+  font-size: 1em;
+  padding: 1px 10px;
+  border-radius: 8px;
+  border: #991010 solid;
+  transition: all ease 0.3s;
+  color: #991010;
+  cursor: pointer;
+  margin: 30px 30px 10px;
+  display: none;
+}
+
+#show-more-item:hover {
+  background: #e63535;
+  color: #fff;
+  border: #fff solid;
+}
+
+@media scree and (max-width: 300px) {
+  .search-results {
+    padding: 0;
+    width: 100%;
+    display: block;
+    /* flex-direction:row; */
+  }
+
+  .output {
+    width: 100%;
+    display: block;
+    /* flex-direction: row; */
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    margin: 4px;
+  }
+
+  .search input {
+    font-size: 0.5em;
+    padding: 2px 10px;
+    margin: 10px;
+  }
+
+  .search button {
+    font-size: 0.5em;
+    padding: 2px 20px;
+  }
+}
